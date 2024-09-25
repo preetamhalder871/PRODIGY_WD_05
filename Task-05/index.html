@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="inner-header">
+            <header>
+                <a id="a-header" href="">FORCASTIFY</a>
+            </header>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <span id="theme-label">Theme:</span>
+                    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">Clear Sky</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="outer-container">
+        <div id="container">
+            <h1 id="box-text">Search Weather</h1>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <input type="text" id="country" placeholder="Enter country name">
+                <button class="theme-toggle" onclick="getWeather()">Get Weather</button>
+            </div>
+            <div id="weather-info"></div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>@2000-2025 All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
